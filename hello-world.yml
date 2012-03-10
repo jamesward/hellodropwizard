@@ -1,2 +1,8 @@
 template: Hello, %s!
 defaultName: Stranger
+logging:
+    syslog:
+        enabled: false
+    console:
+        enabled: true
+
