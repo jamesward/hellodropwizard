@@ -15,9 +15,6 @@ public class HelloWorldConfiguration extends Configuration {
     @JsonProperty
     private String defaultName = "Stranger";
 
-    private HttpConfiguration httpConfiguration = new EnvHttpConfiguration();
-
-    
     public String getTemplate() {
         return template;
     }
@@ -26,8 +23,4 @@ public class HelloWorldConfiguration extends Configuration {
         return defaultName;
     }
 
-    @Override
-    public HttpConfiguration getHttpConfiguration() {
-        return httpConfiguration;
-    }
 }
